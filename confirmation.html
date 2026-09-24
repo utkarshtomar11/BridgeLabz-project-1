@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Confirmed - CineBook</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Cine<span>Book</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="cinemas.html">Cinemas</a></li>
+        <li><a href="dashboard.html">Management</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="search-box">
+          <span>&#128269;</span>
+          <input type="text" placeholder="Search movies...">
+        </div>
+        <a href="booking.html" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONFIRMATION SECTION -->
+  <section class="confirmation-section">
+    <div class="container">
+      <div class="confirmation-card">
+        <div class="confirmation-icon">&#10004;</div>
+        <h1>Booking Confirmed!</h1>
+        <p>Your tickets have been booked successfully. Show this confirmation at the cinema entrance.</p>
+
+        <div class="ticket">
+          <div class="ticket-row">
+            <label>Booking ID</label>
+            <span class="booking-id">CB-2026-84729</span>
+          </div>
+          <hr class="ticket-divider">
+          <div class="ticket-row">
+            <label>Movie</label>
+            <span>Oppenheimer</span>
+          </div>
+          <div class="ticket-row">
+            <label>Cinema</label>
+            <span>CinePlex Grand</span>
+          </div>
+          <div class="ticket-row">
+            <label>Screen</label>
+            <span>Screen 3 (IMAX)</span>
+          </div>
+          <div class="ticket-row">
+            <label>Date</label>
+            <span>Sunday, Sep 23, 2026</span>
+          </div>
+          <div class="ticket-row">
+            <label>Time</label>
+            <span>7:30 PM</span>
+          </div>
+          <div class="ticket-row">
+            <label>Seats</label>
+            <span>C5, C6, D5, D6, D7</span>
+          </div>
+          <hr class="ticket-divider">
+          <div class="ticket-row">
+            <label>Total Amount</label>
+            <span style="color: var(--primary); font-weight: 700; font-size: 1.1rem;">$70.20</span>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 16px; justify-content: center;">
+          <button class="btn btn-secondary">&#128190; Download Ticket</button>
+          <a href="index.html" class="btn btn-primary">Back to Home</a>
+        </div>
+
+        <p style="margin-top: 24px; font-size: 0.85rem; color: var(--gray);">
+          A confirmation email has been sent to your registered email address.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 CineBook. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#">&#128247;</a>
+          <a href="#">&#128038;</a>
+          <a href="#">&#128246;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

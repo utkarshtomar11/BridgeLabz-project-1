@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Management Dashboard - CineBook</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Cine<span>Book</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="cinemas.html">Cinemas</a></li>
+        <li><a href="dashboard.html" class="active">Management</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="search-box">
+          <span>&#128269;</span>
+          <input type="text" placeholder="Search...">
+        </div>
+        <a href="#" class="btn btn-secondary btn-sm">&#128100; Admin</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- DASHBOARD -->
+  <section class="dashboard">
+    <div class="container">
+      <div class="dashboard-header">
+        <div>
+          <h1 style="font-size: 1.8rem; margin-bottom: 4px;">Dashboard</h1>
+          <p style="color: var(--gray);">Welcome back, Admin. Here's what's happening today.</p>
+        </div>
+        <div style="display: flex; gap: 12px;">
+          <button class="btn btn-secondary btn-sm">&#128197; Today</button>
+          <button class="btn btn-primary btn-sm">+ Add Movie</button>
+        </div>
+      </div>
+
+      <!-- Stats Cards -->
+      <div class="dashboard-stats">
+        <div class="stat-card">
+          <div class="stat-card-icon red">&#127916;</div>
+          <h3>24</h3>
+          <p>Active Movies</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card-icon green">&#127915;</div>
+          <h3>1,847</h3>
+          <p>Today's Bookings</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card-icon blue">&#128176;</div>
+          <h3>$28,450</h3>
+          <p>Today's Revenue</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card-icon gold">&#127970;</div>
+          <h3>12</h3>
+          <p>Active Cinemas</p>
+        </div>
+      </div>
+
+      <!-- Dashboard Grid -->
+      <div class="dashboard-grid">
+        <!-- Recent Bookings -->
+        <div class="dashboard-panel">
+          <h3>Recent Bookings</h3>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Booking ID</th>
+                <th>Movie</th>
+                <th>Seats</th>
+                <th>Amount</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color: var(--gold); font-family: monospace;">CB-84729</td>
+                <td>Oppenheimer</td>
+                <td>C5, C6</td>
+                <td>$28.40</td>
+                <td><span class="status-badge active">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td style="color: var(--gold); font-family: monospace;">CB-84728</td>
+                <td>The Flash</td>
+                <td>D3, D4</td>
+                <td>$24.00</td>
+                <td><span class="status-badge active">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td style="color: var(--gold); font-family: monospace;">CB-84727</td>
+                <td>Elemental</td>
+                <td>A1-A4</td>
+                <td>$48.00</td>
+                <td><span class="status-badge active">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td style="color: var(--gold); font-family: monospace;">CB-84726</td>
+                <td>Fast X</td>
+                <td>F7</td>
+                <td>$12.00</td>
+                <td><span class="status-badge ended">Cancelled</span></td>
+              </tr>
+              <tr>
+                <td style="color: var(--gold); font-family: monospace;">CB-84725</td>
+                <td>Spider-Verse</td>
+                <td>B2, B3</td>
+                <td>$32.00</td>
+                <td><span class="status-badge active">Confirmed</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Now Showing -->
+        <div class="dashboard-panel">
+          <h3>Now Showing</h3>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Movie</th>
+                <th>Cinema</th>
+                <th>Screens</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Oppenheimer</td>
+                <td>CinePlex Grand</td>
+                <td>3</td>
+                <td><span class="status-badge active">Active</span></td>
+              </tr>
+              <tr>
+                <td>The Flash</td>
+                <td>MovieWorld Plus</td>
+                <td>2</td>
+                <td><span class="status-badge active">Active</span></td>
+              </tr>
+              <tr>
+                <td>Elemental</td>
+                <td>Star Cinema Elite</td>
+                <td>2</td>
+                <td><span class="status-badge active">Active</span></td>
+              </tr>
+              <tr>
+                <td>Fast X</td>
+                <td>Galaxy Cinema</td>
+                <td>1</td>
+                <td><span class="status-badge upcoming">Ending Soon</span></td>
+              </tr>
+              <tr>
+                <td>Transformers</td>
+                <td>Regal Crown</td>
+                <td>2</td>
+                <td><span class="status-badge active">Active</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Movie Management Form -->
+        <div class="dashboard-panel">
+          <h3>Add New Movie</h3>
+          <form>
+            <div class="form-group">
+              <label>Movie Title</label>
+              <input type="text" class="form-control" placeholder="Enter movie title">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Genre</label>
+                <select class="form-control">
+                  <option>Select genre</option>
+                  <option>Action</option>
+                  <option>Comedy</option>
+                  <option>Drama</option>
+                  <option>Horror</option>
+                  <option>Sci-Fi</option>
+                  <option>Animation</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Duration</label>
+                <input type="text" class="form-control" placeholder="e.g. 2h 30min">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Rating</label>
+                <select class="form-control">
+                  <option>Select rating</option>
+                  <option>G</option>
+                  <option>PG</option>
+                  <option>PG-13</option>
+                  <option>R</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Release Date</label>
+                <input type="date" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Description</label>
+              <textarea class="form-control" rows="3" placeholder="Enter movie description"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Add Movie</button>
+          </form>
+        </div>
+
+        <!-- Cinema Management Form -->
+        <div class="dashboard-panel">
+          <h3>Add New Cinema</h3>
+          <form>
+            <div class="form-group">
+              <label>Cinema Name</label>
+              <input type="text" class="form-control" placeholder="Enter cinema name">
+            </div>
+            <div class="form-group">
+              <label>Location</label>
+              <input type="text" class="form-control" placeholder="Enter full address">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Number of Screens</label>
+                <input type="number" class="form-control" placeholder="e.g. 8">
+              </div>
+              <div class="form-group">
+                <label>Total Capacity</label>
+                <input type="number" class="form-control" placeholder="e.g. 2000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Features</label>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px;">
+                <label style="display: flex; align-items: center; gap: 6px; font-size: 0.85rem; cursor: pointer;">
+                  <input type="checkbox"> IMAX
+                </label>
+                <label style="display: flex; align-items: center; gap: 6px; font-size: 0.85rem; cursor: pointer;">
+                  <input type="checkbox"> Dolby Atmos
+                </label>
+                <label style="display: flex; align-items: center; gap: 6px; font-size: 0.85rem; cursor: pointer;">
+                  <input type="checkbox"> 4DX
+                </label>
+                <label style="display: flex; align-items: center; gap: 6px; font-size: 0.85rem; cursor: pointer;">
+                  <input type="checkbox"> VIP
+                </label>
+                <label style="display: flex; align-items: center; gap: 6px; font-size: 0.85rem; cursor: pointer;">
+                  <input type="checkbox"> Recliners
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Add Cinema</button>
+          </form>
+        </div>
+
+        <!-- Revenue Chart Placeholder -->
+        <div class="dashboard-panel" style="grid-column: 1 / -1;">
+          <h3>Weekly Revenue Overview</h3>
+          <div style="display: flex; align-items: flex-end; gap: 12px; height: 200px; padding: 20px 0;">
+            <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+              <div style="width: 100%; height: 120px; background: linear-gradient(to top, var(--primary), #ff6b6b); border-radius: 6px 6px 0 0;"></div>
+              <span style="font-size: 0.8rem; color: var(--gray);">Mon</span>
+              <span style="font-size: 0.75rem;">$18.2K</span>
+            </div>
+            <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+              <div style="width: 100%; height: 145px; background: linear-gradient(to top, var(--primary), #ff6b6b); border-radius: 6px 6px 0 0;"></div>
+              <span style="font-size: 0.8rem; color: var(--gray);">Tue</span>
+              <span style="font-size: 0.75rem;">$22.1K</span>
+            </div>
+            <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+              <div style="width: 100%; height: 160px; background: linear-gradient(to top, var(--primary), #ff6b6b); border-radius: 6px 6px 0 0;"></div>
+              <span style="font-size: 0.8rem; color: var(--gray);">Wed</span>
+              <span style="font-size: 0.75rem;">$24.5K</span>
+            </div>
+            <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+              <div style="width: 100%; height: 130px; background: linear-gradient(to top, var(--primary), #ff6b6b); border-radius: 6px 6px 0 0;"></div>
+              <span style="font-size: 0.8rem; color: var(--gray);">Thu</span>
+              <span style="font-size: 0.75rem;">$19.8K</span>
+            </div>
+            <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+              <div style="width: 100%; height: 175px; background: linear-gradient(to top, var(--primary), #ff6b6b); border-radius: 6px 6px 0 0;"></div>
+              <span style="font-size: 0.8rem; color: var(--gray);">Fri</span>
+              <span style="font-size: 0.75rem;">$26.3K</span>
+            </div>
+            <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+              <div style="width: 100%; height: 195px; background: linear-gradient(to top, var(--primary), #ff6b6b); border-radius: 6px 6px 0 0;"></div>
+              <span style="font-size: 0.8rem; color: var(--gray);">Sat</span>
+              <span style="font-size: 0.75rem;">$31.2K</span>
+            </div>
+            <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+              <div style="width: 100%; height: 200px; background: linear-gradient(to top, var(--primary), #ff6b6b); border-radius: 6px 6px 0 0;"></div>
+              <span style="font-size: 0.8rem; color: var(--gray);">Sun</span>
+              <span style="font-size: 0.75rem;">$28.4K</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Upcoming Movies -->
+        <div class="dashboard-panel">
+          <h3>Upcoming Releases</h3>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Movie</th>
+                <th>Release Date</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dune: Part Two</td>
+                <td>Mar 1, 2024</td>
+                <td><span class="status-badge upcoming">Upcoming</span></td>
+              </tr>
+              <tr>
+                <td>Kong x Godzilla</td>
+                <td>Mar 29, 2024</td>
+                <td><span class="status-badge upcoming">Upcoming</span></td>
+              </tr>
+              <tr>
+                <td>Mission: Impossible 8</td>
+                <td>May 23, 2024</td>
+                <td><span class="status-badge upcoming">Upcoming</span></td>
+              </tr>
+              <tr>
+                <td>Deadpool 3</td>
+                <td>Jul 26, 2024</td>
+                <td><span class="status-badge upcoming">Upcoming</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Top Movies -->
+        <div class="dashboard-panel">
+          <h3>Top Performing Movies</h3>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Movie</th>
+                <th>Tickets Sold</th>
+                <th>Revenue</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Oppenheimer</td>
+                <td>45,230</td>
+                <td>$542,760</td>
+              </tr>
+              <tr>
+                <td>Spider-Verse</td>
+                <td>38,150</td>
+                <td>$381,500</td>
+              </tr>
+              <tr>
+                <td>The Flash</td>
+                <td>32,800</td>
+                <td>$393,600</td>
+              </tr>
+              <tr>
+                <td>Elemental</td>
+                <td>28,500</td>
+                <td>$285,000</td>
+              </tr>
+              <tr>
+                <td>Fast X</td>
+                <td>25,200</td>
+                <td>$302,400</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 CineBook Admin Panel. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#">&#128247;</a>
+          <a href="#">&#128038;</a>
+          <a href="#">&#128246;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
