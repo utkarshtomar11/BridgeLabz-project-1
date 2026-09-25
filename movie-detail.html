@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oppenheimer - CineBook</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Cine<span>Book</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html" class="active">Movies</a></li>
+        <li><a href="cinemas.html">Cinemas</a></li>
+        <li><a href="dashboard.html">Management</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="search-box">
+          <span>&#128269;</span>
+          <input type="text" placeholder="Search movies...">
+        </div>
+        <a href="booking.html" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOVIE DETAIL HERO -->
+  <section class="movie-detail-hero">
+    <div class="movie-detail-bg"></div>
+    <div class="container">
+      <div class="movie-detail-container">
+        <div class="movie-detail-poster">
+          <span style="font-size: 5rem; opacity: 0.3;">&#128171;</span>
+        </div>
+        <div class="movie-detail-info">
+          <h1>Oppenheimer</h1>
+          <div class="movie-detail-meta">
+            <span class="rating"><span style="color: var(--gold);">&#9733;</span> 9.1 / 10</span>
+            <span>&#128197; 2023</span>
+            <span>&#128337; 3h 0min</span>
+            <span>&#127916; R</span>
+          </div>
+          <p class="movie-detail-description">
+            The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb during World War II. A complex portrait of a brilliant man who faced an impossible moral dilemma.
+          </p>
+          <div class="movie-detail-crew">
+            <div class="crew-item">
+              <label>Director</label>
+              <span>Christopher Nolan</span>
+            </div>
+            <div class="crew-item">
+              <label>Writers</label>
+              <span>Christopher Nolan, Kai Bird</span>
+            </div>
+            <div class="crew-item">
+              <label>Stars</label>
+              <span>Cillian Murphy, Emily Blunt</span>
+            </div>
+          </div>
+          <div class="movie-genres" style="margin-bottom: 28px;">
+            <span class="genre-tag">Drama</span>
+            <span class="genre-tag">History</span>
+            <span class="genre-tag">Biography</span>
+          </div>
+          <div class="movie-detail-actions">
+            <a href="booking.html" class="btn btn-primary btn-lg">&#127915; Book Tickets</a>
+            <button class="btn btn-secondary btn-lg">&#9654; Watch Trailer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWTIMES SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Available <span>Showtimes</span></h2>
+      </div>
+
+      <!-- Cinema 1 -->
+      <div style="background: var(--secondary); border-radius: var(--radius); padding: 24px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.05);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+          <div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 4px;">CinePlex Grand - Downtown</h3>
+            <p style="color: var(--gray); font-size: 0.85rem;">&#128205; Main Street, Downtown</p>
+          </div>
+          <span class="cinema-rating">&#9733; 4.8</span>
+        </div>
+        <div class="show-times">
+          <a href="booking.html" class="show-time">10:30 AM <br><small style="color: var(--gray); font-size: 0.7rem;">Standard</small></a>
+          <a href="booking.html" class="show-time">1:15 PM <br><small style="color: var(--gray); font-size: 0.7rem;">IMAX</small></a>
+          <a href="booking.html" class="show-time">4:00 PM <br><small style="color: var(--gray); font-size: 0.7rem;">Standard</small></a>
+          <a href="booking.html" class="show-time">7:30 PM <br><small style="color: var(--gray); font-size: 0.7rem;">Dolby</small></a>
+          <a href="booking.html" class="show-time">10:45 PM <br><small style="color: var(--gray); font-size: 0.7rem;">Standard</small></a>
+        </div>
+      </div>
+
+      <!-- Cinema 2 -->
+      <div style="background: var(--secondary); border-radius: var(--radius); padding: 24px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.05);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+          <div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 4px;">MovieWorld Plus - Central Plaza</h3>
+            <p style="color: var(--gray); font-size: 0.85rem;">&#128205; 5th Avenue, Central Plaza</p>
+          </div>
+          <span class="cinema-rating">&#9733; 4.6</span>
+        </div>
+        <div class="show-times">
+          <a href="booking.html" class="show-time">11:00 AM <br><small style="color: var(--gray); font-size: 0.7rem;">Standard</small></a>
+          <a href="booking.html" class="show-time">2:30 PM <br><small style="color: var(--gray); font-size: 0.7rem;">Standard</small></a>
+          <a href="booking.html" class="show-time">5:45 PM <br><small style="color: var(--gray); font-size: 0.7rem;">IMAX</small></a>
+          <a href="booking.html" class="show-time">9:00 PM <br><small style="color: var(--gray); font-size: 0.7rem;">Dolby</small></a>
+        </div>
+      </div>
+
+      <!-- Cinema 3 -->
+      <div style="background: var(--secondary); border-radius: var(--radius); padding: 24px; border: 1px solid rgba(255,255,255,0.05);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+          <div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 4px;">Star Cinema Elite - Riverside Mall</h3>
+            <p style="color: var(--gray); font-size: 0.85rem;">&#128205; Level 3, Riverside Mall</p>
+          </div>
+          <span class="cinema-rating">&#9733; 4.9</span>
+        </div>
+        <div class="show-times">
+          <a href="booking.html" class="show-time">10:00 AM <br><small style="color: var(--gray); font-size: 0.7rem;">VIP</small></a>
+          <a href="booking.html" class="show-time">12:30 PM <br><small style="color: var(--gray); font-size: 0.7rem;">Standard</small></a>
+          <a href="booking.html" class="show-time">3:15 PM <br><small style="color: var(--gray); font-size: 0.7rem;">IMAX</small></a>
+          <a href="booking.html" class="show-time">6:00 PM <br><small style="color: var(--gray); font-size: 0.7rem;">4DX</small></a>
+          <a href="booking.html" class="show-time">8:45 PM <br><small style="color: var(--gray); font-size: 0.7rem;">VIP</small></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOVIE DETAILS -->
+  <section class="section" style="background: rgba(255,255,255,0.02);">
+    <div class="container">
+      <h2 class="section-title" style="margin-bottom: 24px;">About the <span>Movie</span></h2>
+      <div style="max-width: 800px; color: var(--gray-light); line-height: 1.8;">
+        <p style="margin-bottom: 16px;">
+          In 1942, during World War II, J. Robert Oppenheimer, a theoretical physicist, is recruited by the United States Army to work on the Manhattan Project, a top-secret program to develop the first nuclear weapons.
+        </p>
+        <p style="margin-bottom: 16px;">
+          As the scientific director of the Los Alamos Laboratory in New Mexico, Oppenheimer leads a team of brilliant scientists in an intense race against time. The project faces numerous technical challenges and moral dilemmas as it progresses toward its ultimate goal.
+        </p>
+        <p>
+          The film chronicles the complex life of Oppenheimer, exploring his scientific genius, political entanglements, and the profound ethical questions that arise from the creation of weapons of mass destruction. After the war, Oppenheimer becomes a controversial figure as he grapples with the implications of his work.
+        </p>
+      </div>
+
+      <div style="margin-top: 40px;">
+        <h2 class="section-title" style="margin-bottom: 24px;">Cast & <span>Crew</span></h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 20px;">
+          <div style="text-align: center;">
+            <div style="width: 120px; height: 120px; background: var(--gray-dark); border-radius: 50%; margin: 0 auto 12px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; opacity: 0.3;">&#128104;</div>
+            <h4 style="font-size: 0.95rem;">Cillian Murphy</h4>
+            <p style="color: var(--gray); font-size: 0.8rem;">J. Robert Oppenheimer</p>
+          </div>
+          <div style="text-align: center;">
+            <div style="width: 120px; height: 120px; background: var(--gray-dark); border-radius: 50%; margin: 0 auto 12px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; opacity: 0.3;">&#128105;</div>
+            <h4 style="font-size: 0.95rem;">Emily Blunt</h4>
+            <p style="color: var(--gray); font-size: 0.8rem;">Kitty Oppenheimer</p>
+          </div>
+          <div style="text-align: center;">
+            <div style="width: 120px; height: 120px; background: var(--gray-dark); border-radius: 50%; margin: 0 auto 12px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; opacity: 0.3;">&#128104;</div>
+            <h4 style="font-size: 0.95rem;">Matt Damon</h4>
+            <p style="color: var(--gray); font-size: 0.8rem;">Leslie Groves</p>
+          </div>
+          <div style="text-align: center;">
+            <div style="width: 120px; height: 120px; background: var(--gray-dark); border-radius: 50%; margin: 0 auto 12px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; opacity: 0.3;">&#128104;</div>
+            <h4 style="font-size: 0.95rem;">Robert Downey Jr.</h4>
+            <p style="color: var(--gray); font-size: 0.8rem;">Lewis Strauss</p>
+          </div>
+          <div style="text-align: center;">
+            <div style="width: 120px; height: 120px; background: var(--gray-dark); border-radius: 50%; margin: 0 auto 12px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; opacity: 0.3;">&#128105;</div>
+            <h4 style="font-size: 0.95rem;">Florence Pugh</h4>
+            <p style="color: var(--gray); font-size: 0.8rem;">Jean Tatlock</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">Cine<span>Book</span></div>
+          <p>Your ultimate destination for movie ticket booking.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="movies.html">Now Showing</a></li>
+            <li><a href="movies.html">Coming Soon</a></li>
+            <li><a href="cinemas.html">Cinemas</a></li>
+            <li><a href="booking.html">Book Tickets</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CineBook. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#">&#128247;</a>
+          <a href="#">&#128038;</a>
+          <a href="#">&#128246;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

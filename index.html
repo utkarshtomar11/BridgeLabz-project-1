@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineBook - Movie Ticket Booking</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Cine<span>Book</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="cinemas.html">Cinemas</a></li>
+        <li><a href="dashboard.html">Management</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="search-box">
+          <span>&#128269;</span>
+          <input type="text" placeholder="Search movies...">
+        </div>
+        <a href="booking.html" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">&#127916; Now Showing in 50+ Cinemas</div>
+      <h1>Your Perfect <span>Cinema</span> Experience Starts Here</h1>
+      <p>Book tickets for the latest blockbusters, reserve your favorite seats, and enjoy an unforgettable movie experience.</p>
+      <div class="hero-buttons">
+        <a href="movies.html" class="btn btn-primary btn-lg">&#9654; Browse Movies</a>
+        <a href="cinemas.html" class="btn btn-secondary btn-lg">&#127970; Find Cinemas</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <h3>500+</h3>
+          <p>Movies Listed</p>
+        </div>
+        <div class="stat">
+          <h3>120+</h3>
+          <p>Cinema Locations</p>
+        </div>
+        <div class="stat">
+          <h3>2M+</h3>
+          <p>Happy Customers</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image"></div>
+  </section>
+
+  <!-- NOW SHOWING -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Now <span>Showing</span></h2>
+        <a href="movies.html" class="btn btn-secondary">View All</a>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <!-- Movie 1 -->
+        <div class="now-showing-card">
+          <div class="now-showing-poster">
+            <span style="font-size: 4rem; opacity: 0.3;">&#127916;</span>
+          </div>
+          <div class="now-showing-content">
+            <h3>Guardians of the Galaxy Vol. 3</h3>
+            <p>Peter Quill and his fellow Guardians must protect one of their own and face the consequences of his past actions.</p>
+            <div class="movie-genres">
+              <span class="genre-tag">Action</span>
+              <span class="genre-tag">Adventure</span>
+              <span class="genre-tag">Comedy</span>
+            </div>
+            <div class="show-times">
+              <span class="show-time">10:30 AM</span>
+              <span class="show-time">1:15 PM</span>
+              <span class="show-time">4:00 PM</span>
+              <span class="show-time">7:30 PM</span>
+              <span class="show-time">10:45 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="now-showing-card">
+          <div class="now-showing-poster">
+            <span style="font-size: 4rem; opacity: 0.3;">&#128163;</span>
+          </div>
+          <div class="now-showing-content">
+            <h3>Fast X</h3>
+            <p>Dominic Toretto and his family must face a ruthless son of a notorious kingpin seeking vengeance.</p>
+            <div class="movie-genres">
+              <span class="genre-tag">Action</span>
+              <span class="genre-tag">Thriller</span>
+              <span class="genre-tag">Adventure</span>
+            </div>
+            <div class="show-times">
+              <span class="show-time">11:00 AM</span>
+              <span class="show-time">2:30 PM</span>
+              <span class="show-time">5:45 PM</span>
+              <span class="show-time">9:00 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie 3 -->
+        <div class="now-showing-card">
+          <div class="now-showing-poster">
+            <span style="font-size: 4rem; opacity: 0.3;">&#127775;</span>
+          </div>
+          <div class="now-showing-content">
+            <h3>Spider-Man: Across the Spider-Verse</h3>
+            <p>Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence.</p>
+            <div class="movie-genres">
+              <span class="genre-tag">Animation</span>
+              <span class="genre-tag">Action</span>
+              <span class="genre-tag">Adventure</span>
+            </div>
+            <div class="show-times">
+              <span class="show-time">10:00 AM</span>
+              <span class="show-time">12:30 PM</span>
+              <span class="show-time">3:15 PM</span>
+              <span class="show-time">6:00 PM</span>
+              <span class="show-time">8:45 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED MOVIES -->
+  <section class="section" style="background: rgba(255,255,255,0.02);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured <span>Movies</span></h2>
+        <a href="movies.html" class="btn btn-secondary">View All</a>
+      </div>
+
+      <div class="movies-grid">
+        <!-- Movie Card 1 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-poster-placeholder">&#127916;</span>
+            <span class="movie-rating"><span class="star">&#9733;</span> 8.5</span>
+            <span class="movie-badge">New</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">The Flash</h3>
+            <div class="movie-meta">
+              <span>&#128337; 2h 24min</span>
+              <span>&#128197; 2023</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Action</span>
+              <span class="genre-tag">Sci-Fi</span>
+            </div>
+            <div class="movie-actions">
+              <a href="movie-detail.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="booking.html" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie Card 2 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-poster-placeholder">&#128128;</span>
+            <span class="movie-rating"><span class="star">&#9733;</span> 7.9</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Transformers: Rise of the Beasts</h3>
+            <div class="movie-meta">
+              <span>&#128337; 2h 7min</span>
+              <span>&#128197; 2023</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Action</span>
+              <span class="genre-tag">Adventure</span>
+            </div>
+            <div class="movie-actions">
+              <a href="movie-detail.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="booking.html" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie Card 3 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-poster-placeholder">&#128171;</span>
+            <span class="movie-rating"><span class="star">&#9733;</span> 9.1</span>
+            <span class="movie-badge">Top Rated</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Oppenheimer</h3>
+            <div class="movie-meta">
+              <span>&#128337; 3h 0min</span>
+              <span>&#128197; 2023</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Drama</span>
+              <span class="genre-tag">History</span>
+            </div>
+            <div class="movie-actions">
+              <a href="movie-detail.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="booking.html" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie Card 4 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-poster-placeholder">&#127775;</span>
+            <span class="movie-rating"><span class="star">&#9733;</span> 8.2</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Indiana Jones and the Dial of Destiny</h3>
+            <div class="movie-meta">
+              <span>&#128337; 2h 34min</span>
+              <span>&#128197; 2023</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Adventure</span>
+              <span class="genre-tag">Action</span>
+            </div>
+            <div class="movie-actions">
+              <a href="movie-detail.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="booking.html" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie Card 5 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-poster-placeholder">&#128054;</span>
+            <span class="movie-rating"><span class="star">&#9733;</span> 8.7</span>
+            <span class="movie-badge">Popular</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Elemental</h3>
+            <div class="movie-meta">
+              <span>&#128337; 1h 41min</span>
+              <span>&#128197; 2023</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Animation</span>
+              <span class="genre-tag">Comedy</span>
+            </div>
+            <div class="movie-actions">
+              <a href="movie-detail.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="booking.html" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie Card 6 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-poster-placeholder">&#128165;</span>
+            <span class="movie-rating"><span class="star">&#9733;</span> 7.5</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Mission: Impossible - Dead Reckoning</h3>
+            <div class="movie-meta">
+              <span>&#128337; 2h 43min</span>
+              <span>&#128197; 2023</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Action</span>
+              <span class="genre-tag">Thriller</span>
+            </div>
+            <div class="movie-actions">
+              <a href="movie-detail.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="booking.html" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CINEMAS SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Popular <span>Cinemas</span></h2>
+        <a href="cinemas.html" class="btn btn-secondary">View All</a>
+      </div>
+
+      <div class="cinemas-grid">
+        <div class="cinema-card">
+          <div class="cinema-header">
+            <div>
+              <h3 class="cinema-name">CinePlex Grand</h3>
+              <p class="cinema-location">&#128205; Downtown, Main Street</p>
+            </div>
+            <span class="cinema-rating">&#9733; 4.8</span>
+          </div>
+          <div class="cinema-features">
+            <span class="feature-tag">IMAX</span>
+            <span class="feature-tag">Dolby Atmos</span>
+            <span class="feature-tag">4DX</span>
+            <span class="feature-tag">Recliner Seats</span>
+          </div>
+          <p class="cinema-screens">12 Screens &bull; 3,200 Seats</p>
+        </div>
+
+        <div class="cinema-card">
+          <div class="cinema-header">
+            <div>
+              <h3 class="cinema-name">MovieWorld Plus</h3>
+              <p class="cinema-location">&#128205; Central Plaza, 5th Avenue</p>
+            </div>
+            <span class="cinema-rating">&#9733; 4.6</span>
+          </div>
+          <div class="cinema-features">
+            <span class="feature-tag">IMAX</span>
+            <span class="feature-tag">Dolby Atmos</span>
+            <span class="feature-tag">Luxury Lounge</span>
+          </div>
+          <p class="cinema-screens">8 Screens &bull; 2,100 Seats</p>
+        </div>
+
+        <div class="cinema-card">
+          <div class="cinema-header">
+            <div>
+              <h3 class="cinema-name">Star Cinema Elite</h3>
+              <p class="cinema-location">&#128205; Riverside Mall, Level 3</p>
+            </div>
+            <span class="cinema-rating">&#9733; 4.9</span>
+          </div>
+          <div class="cinema-features">
+            <span class="feature-tag">IMAX</span>
+            <span class="feature-tag">ScreenX</span>
+            <span class="feature-tag">VIP Lounge</span>
+            <span class="feature-tag">Dolby Cinema</span>
+          </div>
+          <p class="cinema-screens">10 Screens &bull; 2,800 Seats</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">Cine<span>Book</span></div>
+          <p>Your ultimate destination for movie ticket booking. Enjoy seamless booking, premium experiences, and the best cinema services.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="movies.html">Now Showing</a></li>
+            <li><a href="movies.html">Coming Soon</a></li>
+            <li><a href="cinemas.html">Cinemas</a></li>
+            <li><a href="booking.html">Book Tickets</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Licensing</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CineBook. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#">&#128247;</a>
+          <a href="#">&#128038;</a>
+          <a href="#">&#128246;</a>
+          <a href="#">&#128248;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

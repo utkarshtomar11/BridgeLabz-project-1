@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies - CineBook</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Cine<span>Book</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html" class="active">Movies</a></li>
+        <li><a href="cinemas.html">Cinemas</a></li>
+        <li><a href="dashboard.html">Management</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="search-box">
+          <span>&#128269;</span>
+          <input type="text" placeholder="Search movies...">
+        </div>
+        <a href="booking.html" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section style="padding-top: 120px; padding-bottom: 40px; background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1a 100%);">
+    <div class="container">
+      <h1 style="font-size: 2.5rem; margin-bottom: 12px;">All <span style="color: var(--primary);">Movies</span></h1>
+      <p style="color: var(--gray); max-width: 500px;">Browse through our collection of movies currently showing and coming soon.</p>
+    </div>
+  </section>
+
+  <!-- FILTER TABS -->
+  <section style="padding: 20px 0; background: rgba(255,255,255,0.02); border-bottom: 1px solid rgba(255,255,255,0.05);">
+    <div class="container">
+      <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+        <button class="btn btn-primary btn-sm">All Movies</button>
+        <button class="btn btn-secondary btn-sm">Now Showing</button>
+        <button class="btn btn-secondary btn-sm">Coming Soon</button>
+        <button class="btn btn-secondary btn-sm">Action</button>
+        <button class="btn btn-secondary btn-sm">Comedy</button>
+        <button class="btn btn-secondary btn-sm">Drama</button>
+        <button class="btn btn-secondary btn-sm">Horror</button>
+        <button class="btn btn-secondary btn-sm">Sci-Fi</button>
+        <button class="btn btn-secondary btn-sm">Animation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOVIES GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="movies-grid">
+        <!-- Movie 1 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-poster-placeholder">&#127916;</span>
+            <span class="movie-rating"><span class="star">&#9733;</span> 8.5</span>
+            <span class="movie-badge">New</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">The Flash</h3>
+            <div class="movie-meta">
+              <span>&#128337; 2h 24min</span>
+              <span>&#128197; 2023</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Action</span>
+              <span class="genre-tag">Sci-Fi</span>
+            </div>
+            <div class="movie-actions">
+              <a href="movie-detail.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="booking.html" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-poster-placeholder">&#128128;</span>
+            <span class="movie-rating"><span class="star">&#9733;</span> 7.9</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Transformers: Rise of the Beasts</h3>
+            <div class="movie-meta">
+              <span>&#128337; 2h 7min</span>
+              <span>&#128197; 2023</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Action</span>
+              <span class="genre-tag">Adventure</span>
+            </div>
+            <div class="movie-actions">
+              <a href="movie-detail.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="booking.html" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie 3 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-poster-placeholder">&#128171;</span>
+            <span class="movie-rating"><span class="star">&#9733;</span> 9.1</span>
+            <span class="movie-badge">Top Rated</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Oppenheimer</h3>
+            <div class="movie-meta">
+              <span>&#128337; 3h 0min</span>
+              <span>&#128197; 2023</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Drama</span>
+              <span class="genre-tag">History</span>
+            </div>
+            <div class="movie-actions">
+              <a href="movie-detail.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="booking.html" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie 4 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-poster-placeholder">&#127775;</span>
+            <span class="movie-rating"><span class="star">&#9733;</span> 8.2</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Indiana Jones and the Dial of Destiny</h3>
+            <div class="movie-meta">
+              <span>&#128337; 2h 34min</span>
+              <span>&#128197; 2023</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Adventure</span>
+              <span class="genre-tag">Action</span>
+            </div>
+            <div class="movie-actions">
+              <a href="movie-detail.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="booking.html" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie 5 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-poster-placeholder">&#128054;</span>
+            <span class="movie-rating"><span class="star">&#9733;</span> 8.7</span>
+            <span class="movie-badge">Popular</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Elemental</h3>
+            <div class="movie-meta">
+              <span>&#128337; 1h 41min</span>
+              <span>&#128197; 2023</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Animation</span>
+              <span class="genre-tag">Comedy</span>
+            </div>
+            <div class="movie-actions">
+              <a href="movie-detail.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="booking.html" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie 6 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-poster-placeholder">&#128165;</span>
+            <span class="movie-rating"><span class="star">&#9733;</span> 7.5</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Mission: Impossible - Dead Reckoning</h3>
+            <div class="movie-meta">
+              <span>&#128337; 2h 43min</span>
+              <span>&#128197; 2023</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Action</span>
+              <span class="genre-tag">Thriller</span>
+            </div>
+            <div class="movie-actions">
+              <a href="movie-detail.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="booking.html" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie 7 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-poster-placeholder">&#128163;</span>
+            <span class="movie-rating"><span class="star">&#9733;</span> 8.1</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Insidious: The Red Door</h3>
+            <div class="movie-meta">
+              <span>&#128337; 1h 47min</span>
+              <span>&#128197; 2023</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Horror</span>
+              <span class="genre-tag">Thriller</span>
+            </div>
+            <div class="movie-actions">
+              <a href="movie-detail.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="booking.html" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie 8 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-poster-placeholder">&#128156;</span>
+            <span class="movie-rating"><span class="star">&#9733;</span> 7.8</span>
+            <span class="movie-badge">Romance</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Love Again</h3>
+            <div class="movie-meta">
+              <span>&#128337; 1h 44min</span>
+              <span>&#128197; 2023</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Romance</span>
+              <span class="genre-tag">Drama</span>
+            </div>
+            <div class="movie-actions">
+              <a href="movie-detail.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="booking.html" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie 9 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-poster-placeholder">&#127942;</span>
+            <span class="movie-rating"><span class="star">&#9733;</span> 8.9</span>
+            <span class="movie-badge">Award Winner</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Killers of the Flower Moon</h3>
+            <div class="movie-meta">
+              <span>&#128337; 3h 26min</span>
+              <span>&#128197; 2023</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Crime</span>
+              <span class="genre-tag">Drama</span>
+            </div>
+            <div class="movie-actions">
+              <a href="movie-detail.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="booking.html" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie 10 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-poster-placeholder">&#128126;</span>
+            <span class="movie-rating"><span class="star">&#9733;</span> 7.3</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">The Nun II</h3>
+            <div class="movie-meta">
+              <span>&#128337; 1h 50min</span>
+              <span>&#128197; 2023</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Horror</span>
+              <span class="genre-tag">Mystery</span>
+            </div>
+            <div class="movie-actions">
+              <a href="movie-detail.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="booking.html" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie 11 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-poster-placeholder">&#128640;</span>
+            <span class="movie-rating"><span class="star">&#9733;</span> 9.3</span>
+            <span class="movie-badge">Coming Soon</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Dune: Part Two</h3>
+            <div class="movie-meta">
+              <span>&#128337; 2h 46min</span>
+              <span>&#128197; 2024</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Sci-Fi</span>
+              <span class="genre-tag">Adventure</span>
+            </div>
+            <div class="movie-actions">
+              <a href="movie-detail.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="booking.html" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie 12 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-poster-placeholder">&#128125;</span>
+            <span class="movie-rating"><span class="star">&#9733;</span> 8.0</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">The Equalizer 3</h3>
+            <div class="movie-meta">
+              <span>&#128337; 1h 49min</span>
+              <span>&#128197; 2023</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Action</span>
+              <span class="genre-tag">Thriller</span>
+            </div>
+            <div class="movie-actions">
+              <a href="movie-detail.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="booking.html" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">Cine<span>Book</span></div>
+          <p>Your ultimate destination for movie ticket booking. Enjoy seamless booking, premium experiences, and the best cinema services.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="movies.html">Now Showing</a></li>
+            <li><a href="movies.html">Coming Soon</a></li>
+            <li><a href="cinemas.html">Cinemas</a></li>
+            <li><a href="booking.html">Book Tickets</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Licensing</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CineBook. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#">&#128247;</a>
+          <a href="#">&#128038;</a>
+          <a href="#">&#128246;</a>
+          <a href="#">&#128248;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
